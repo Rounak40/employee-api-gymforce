@@ -1,0 +1,29 @@
+.home-container {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .login-button, .register-button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  
+  .login-button:hover, .register-button:hover {
+    background-color: #0056b3;
+  }
+  
