@@ -1,0 +1,38 @@
+
+POST /api/register
+body: {'username':'','password':''}
+response : {'message':'Account has been created','username': username}
+
+POST /api/login
+body: {'username':'','password':''}
+response : {'message':'Success','token': token}
+
+
+
+Pass headers in all the below routes
+headers = {'Authorization': 'Token .......'}
+
+GET /api/logout
+response : {'message':'You are logged out.'}
+
+# Get all employee
+GET /api/employee/
+response : {'message':'success','results':[]}  -> all employees as list
+
+# Add employee
+POST /api/employee/
+body: ->  {'first_name':'','last_name':'','email':'','phone':'','salary':0}
+response : {'message':'success','results':[]}  -> all employees as list
+
+# Delete Employee
+DELETE /api/employee/1/  1-> ( user key/id )
+response : {'message':'success','results':[]}  -> all employees as list
+
+# Update Employee
+PUT /api/employee/1/  1-> ( user key/id )
+body: -> pass fields that need to be updated
+    to update email :    {'email':'abcd@gmail.com'}
+response : {'message':'success','results':[]}  -> all employees as list
+
+
+
